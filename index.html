@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorias Método Viver - Beatriz Bouzada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #e60012;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            max-width: 100px;
+        }
+        .container {
+            padding: 20px;
+        }
+
+        .mentorias {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .mentoria-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+        }
+        .mentoria-card h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        .mentoria-card p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .mentoria-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e60012;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .mentoria-card a:hover {
+            background-color: #e60012;
+        }
+        .sobre {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .sobre img {
+            border-radius: 50%;
+            width: 150px;
+        }
+        footer {
+    background-color: #e60012;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+        .mentoria-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: calc(33% - 40px);
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentoria-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .mentoria-card p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .mentoria-card a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #e60012;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .mentoria-card a:hover {
+        background-color: #e60012;
+    }
+
+
+    .intro {
+    position: relative;
+    background-image: url('montanha.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a área da seção */
+    background-position: center; /* Centraliza a imagem de fundo */
+
+    padding: 60px 20px; /* Ajuste o padding conforme necessário */
+    color: white; /* Cor do texto para contraste com a imagem de fundo */
+    text-align: center; /* Centraliza o texto */
+
+
+
+}
+
+    .intro h1 {
+        font-size: 3em; /* Ajuste o tamanho da fonte do título */
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro p {
+        font-size: 1.5em; /* Ajuste o tamanho da fonte do parágrafo */
+        margin-top: 10px;
+    }
+
+    .sobre {
+    background-color: #e60012; /* Vermelho do tema */
+    color: white; /* Texto em branco para contraste */
+    padding: 40px 20px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    overflow: hidden; /* Evita que o conteúdo ultrapasse as bordas */
+    margin: 50px 0; /* Margem para separação das outras seções */
+}
+
+.sobre h2 {
+    text-align: center; /* Centraliza o título */
+    font-size: 2.5em; /* Tamanho maior do título */
+    margin-top: 0; /* Remove margem superior */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.sobre-content {
+    display: flex; /* Organiza o conteúdo em linha */
+    flex-wrap: nowrap; /* Impede quebra de linha nos itens */
+    justify-content: space-between; /* Espaça o texto e a imagem */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    max-width: 1200px; /* Largura máxima da seção */
+    margin: auto; /* Centraliza o conteúdo na página */
+}
+
+.sobre-texto {
+    flex: 1; /* O texto ocupa 50% da largura */
+    padding-right: 20px; /* Espaçamento à direita do texto */
+    text-align: justify; /* Justifica o texto */
+}
+
+.sobre-texto p {
+    font-size: 1em; /* Tamanho da fonte para o parágrafo */
+    line-height: 1.6; /* Altura da linha */
+    margin-bottom: 15px; /* Espaçamento entre os parágrafos */
+}
+
+.sobre-imagem {
+    flex: 1; /* A imagem ocupa 50% da largura */
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.sobre-imagem img {
+    max-width: 100%; /* A imagem ocupa no máximo 100% da largura disponível */
+    height: 800px;
+    width: 600px; /* Altura fixa da imagem */
+    border-radius: 10px; /* Bordas arredondadas da imagem */
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+  }
+
+  /* Para dispositivos móveis */
+  @media (max-width: 768px) {
+    .responsive-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+    </style>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+        <img src="fc5d075f-4fb7-4f1e-9336-9b8a6fb0e8c7-removebg-preview.png" alt="Logo do Projeto" style="height: 50px;">
+        <nav style="display: flex; gap: 15px; align-items: center;">
+            <a href="https://wa.me/1234567890" style="color: white; display: flex; align-items: center; text-decoration: none;">
+                <img src="whatsapp.png" alt="WhatsApp" style="height: 28px; margin-right: 5px;">
+            </a>
+            
+            </a>
+            <a href="https://instagram.com/seuprofile" style="color: white; display: flex; align-items: center; text-decoration: none;">
+                <img src="instagram-white-icon.webp" alt="Instagram" style="height: 20px; margin-right: 5px;"> 
+            </a>
+        </nav>
+    </header>
+
+    <img src="Inserir um título (1).png" alt="" class="responsive-image">
+
+    
+    <div class="container">
+        <p></p>
+        <section class="mentorias">
+            <div class="mentoria-card">
+                <img src="TDAH_Adulto.jpeg" alt="Método Viver: TDAH Adulto">
+                <p>Entenda e gerencie o TDAH na vida adulta com técnicas eficazes.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="mentoria-card">
+                <img src="Superando_a_ansiedade.jpeg" alt="Método Viver: Superando a Ansiedade">
+                <p>Desenvolva habilidades para superar a ansiedade e viver com mais calma.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="mentoria-card">
+                <img src="Liderança_de_alto_nível.jpeg" alt="Método Viver: Liderança de Alto Impacto">
+                <p>Transforme-se em um líder influente e eficaz.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="mentoria-card">
+                <img src="Vida_Plena.jpeg" alt="Método Viver: Vida Plena">
+                <p>Encontre o equilíbrio e a plenitude em todas as áreas da sua vida.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="mentoria-card">
+                <img src="Para_Emreendedores.jpeg" alt="Método Viver: Para Empreendedores">
+                <p>Desenvolva suas habilidades empreendedoras e leve seu negócio ao próximo nível.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="mentoria-card">
+                <img src="Transicao_de_carreira.jpeg" alt="Método Viver: Transição de Carreira">
+                <p>Faça a transição para uma nova carreira com confiança e clareza.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            
+        </section>
+        
+        
+    </div>
+    <img src="Sobre mim (1).png" alt="" class="responsive-image">
+
+    <p></p>
+    <br>
+
+    <footer>
+        <p>&copy; 2024 Método Viver - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
